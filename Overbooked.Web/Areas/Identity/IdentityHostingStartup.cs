@@ -16,13 +16,16 @@ namespace Overbooked.Web.Areas.Identity
     {
         public void Configure(IWebHostBuilder builder)
         {
-            builder.ConfigureServices((context, services) => {
+            builder.ConfigureServices((context, services) =>
+            {
                 services.AddDbContext<OverbookedContext>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("OverbookedContextConnection")));
 
-                services.AddDefaultIdentity<User>()
-                    .AddEntityFrameworkStores<OverbookedContext>();
+                services.AddIdentity<User, IdentityRole>()
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<OverbookedContext>()
+                .AddDefaultTokenProviders();
             });
         }
     }

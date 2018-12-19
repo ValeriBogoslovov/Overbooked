@@ -18,6 +18,7 @@ namespace Overbooked.Web
     using Microsoft.Extensions.DependencyInjection;
     using Overbooked.Data;
     using Overbooked.Data.Models;
+    using Microsoft.AspNetCore.Identity.UI.Services;
 
     public class Startup
     {
@@ -38,17 +39,23 @@ namespace Overbooked.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<OverbookedContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddIdentity<User, IdentityRole>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<OverbookedContext>();
-
-            services.AddMvc(options => 
+            services.AddMvc(options =>
             {
-                    options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddRazorPagesOptions(options =>
+                {
+                    options.AllowAreas = true;
+                    options.Conventions.AuthorizeAreaFolder("Identity", "/Account/Manage");
+                    options.Conventions.AuthorizeAreaPage("Identity", "/Account/Logout");
+                });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = $"/Identity/Account/Login";
+                options.LogoutPath = $"/Identity/Account/Logout";
+                options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+            });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
