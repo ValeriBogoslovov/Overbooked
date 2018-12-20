@@ -15,7 +15,7 @@
         {
             using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                serviceScope.ServiceProvider.GetService<OverbookedDbContext>().Database.EnsureDeleted();
+                //serviceScope.ServiceProvider.GetService<OverbookedDbContext>().Database.EnsureDeleted();
 
                 serviceScope.ServiceProvider.GetService<OverbookedDbContext>().Database.Migrate();
 

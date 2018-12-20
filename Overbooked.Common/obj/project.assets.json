@@ -929,23 +929,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Home PC\\.nuget\\packages\\": {},
+    "C:\\Users\\Valeri\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VALERI\\GitHub Repository\\Overbooked\\Overbooked.Common\\Overbooked.Common.csproj",
+      "projectUniqueName": "E:\\VALERI\\Desktop_GitHub\\Overbooked\\Overbooked.Common\\Overbooked.Common.csproj",
       "projectName": "Overbooked.Common",
-      "projectPath": "D:\\VALERI\\GitHub Repository\\Overbooked\\Overbooked.Common\\Overbooked.Common.csproj",
-      "packagesPath": "C:\\Users\\Home PC\\.nuget\\packages\\",
-      "outputPath": "D:\\VALERI\\GitHub Repository\\Overbooked\\Overbooked.Common\\obj\\",
+      "projectPath": "E:\\VALERI\\Desktop_GitHub\\Overbooked\\Overbooked.Common\\Overbooked.Common.csproj",
+      "packagesPath": "C:\\Users\\Valeri\\.nuget\\packages\\",
+      "outputPath": "E:\\VALERI\\Desktop_GitHub\\Overbooked\\Overbooked.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Home PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Valeri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

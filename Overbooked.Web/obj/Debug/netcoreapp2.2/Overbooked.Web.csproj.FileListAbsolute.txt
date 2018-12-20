@@ -201,3 +201,5 @@ D:\VALERI\GitHub Repository\Overbooked\Overbooked.Web\obj\Debug\netcoreapp2.2\Ov
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Web\obj\Debug\netcoreapp2.2\Overbooked.Web.pdb
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Web\bin\Debug\netcoreapp2.2\Overbooked.Common.dll
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Web\bin\Debug\netcoreapp2.2\Overbooked.Common.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Web\bin\Debug\netcoreapp2.2\Overbooked.Common.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Web\bin\Debug\netcoreapp2.2\Overbooked.Common.pdb

@@ -20,7 +20,7 @@ namespace Overbooked.Web.Areas.Identity
             {
                 services.AddDbContext<OverbookedDbContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("DefaultConnection")));
+                        context.Configuration.GetConnectionString("OverbookedContextConnection")));
 
                 services.AddIdentity<User, IdentityRole>(options => {
                     options.Password.RequireDigit = false;

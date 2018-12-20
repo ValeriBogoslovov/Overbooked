@@ -10,7 +10,7 @@ using Overbooked.Data;
 namespace Overbooked.Data.Migrations
 {
     [DbContext(typeof(OverbookedDbContext))]
-    [Migration("20181220111855_Initial")]
+    [Migration("20181220135003_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -153,6 +153,8 @@ namespace Overbooked.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("HotelId");
+
+                    b.Property<decimal>("Price");
 
                     b.Property<int>("Type");
 

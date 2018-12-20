@@ -1,0 +1,12 @@
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\bin\Debug\netstandard2.0\Overbooked.Services.deps.json
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\bin\Debug\netstandard2.0\Overbooked.Services.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.csproj.CoreCompileInputs.cache
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.AssemblyInfoInputs.cache
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.AssemblyInfo.cs
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\bin\Debug\netstandard2.0\Overbooked.Services.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\bin\Debug\netstandard2.0\Overbooked.Data.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\bin\Debug\netstandard2.0\Overbooked.Data.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.csprojAssemblyReference.cache
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Services\obj\Debug\netstandard2.0\Overbooked.Services.csproj.CopyComplete

@@ -22,3 +22,4 @@ D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.AssemblyInfo.cs
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.dll
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.csprojAssemblyReference.cache

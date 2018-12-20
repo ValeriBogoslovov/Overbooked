@@ -96,6 +96,7 @@ namespace Overbooked.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Price = table.Column<decimal>(nullable: false),
                     HotelId = table.Column<int>(nullable: true),
                     Type = table.Column<int>(nullable: false)
                 },

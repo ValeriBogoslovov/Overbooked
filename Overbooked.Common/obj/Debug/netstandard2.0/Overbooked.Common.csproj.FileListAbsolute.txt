@@ -7,3 +7,11 @@ D:\VALERI\GitHub Repository\Overbooked\Overbooked.Common\bin\Debug\netstandard2.
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.csprojAssemblyReference.cache
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.dll
 D:\VALERI\GitHub Repository\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\bin\Debug\netstandard2.0\Overbooked.Common.deps.json
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\bin\Debug\netstandard2.0\Overbooked.Common.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\bin\Debug\netstandard2.0\Overbooked.Common.pdb
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.csproj.CoreCompileInputs.cache
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.AssemblyInfoInputs.cache
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.AssemblyInfo.cs
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.dll
+E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Common\obj\Debug\netstandard2.0\Overbooked.Common.pdb
