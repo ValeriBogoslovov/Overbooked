@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Overbooked.Services
+﻿namespace Overbooked.Services
 {
-    class ICustomerService
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public interface ICustomerService
     {
+
     }
 }
