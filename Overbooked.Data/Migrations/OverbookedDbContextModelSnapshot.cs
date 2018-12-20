@@ -3,17 +3,15 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Overbooked.Data;
 
 namespace Overbooked.Data.Migrations
 {
-    [DbContext(typeof(OverbookedContext))]
-    [Migration("20181219133920_Initial")]
-    partial class Initial
+    [DbContext(typeof(OverbookedDbContext))]
+    partial class OverbookedDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -87,11 +85,9 @@ namespace Overbooked.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("ProviderKey")
-                        .HasMaxLength(128);
+                    b.Property<string>("ProviderKey");
 
                     b.Property<string>("ProviderDisplayName");
 
@@ -122,17 +118,47 @@ namespace Overbooked.Data.Migrations
                 {
                     b.Property<string>("UserId");
 
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(128);
+                    b.Property<string>("Name");
 
                     b.Property<string>("Value");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Overbooked.Data.Models.Hotel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Hotels");
+                });
+
+            modelBuilder.Entity("Overbooked.Data.Models.Room", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("HotelId");
+
+                    b.Property<int>("Type");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HotelId");
+
+                    b.ToTable("Rooms");
                 });
 
             modelBuilder.Entity("Overbooked.Data.Models.User", b =>
@@ -150,9 +176,13 @@ namespace Overbooked.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<int?>("HotelId");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("MailClient");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
@@ -174,6 +204,10 @@ namespace Overbooked.Data.Migrations
                         .HasMaxLength(256);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HotelId")
+                        .IsUnique()
+                        .HasFilter("[HotelId] IS NOT NULL");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -229,6 +263,20 @@ namespace Overbooked.Data.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Overbooked.Data.Models.Room", b =>
+                {
+                    b.HasOne("Overbooked.Data.Models.Hotel", "Hotel")
+                        .WithMany("Rooms")
+                        .HasForeignKey("HotelId");
+                });
+
+            modelBuilder.Entity("Overbooked.Data.Models.User", b =>
+                {
+                    b.HasOne("Overbooked.Data.Models.Hotel", "Hotel")
+                        .WithOne("User")
+                        .HasForeignKey("Overbooked.Data.Models.User", "HotelId");
                 });
 #pragma warning restore 612, 618
         }

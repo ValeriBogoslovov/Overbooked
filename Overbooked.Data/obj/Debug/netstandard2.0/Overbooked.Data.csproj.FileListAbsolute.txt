@@ -14,3 +14,11 @@ E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Ove
 E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.AssemblyInfo.cs
 E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.dll
 E:\VALERI\Desktop_GitHub\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.pdb
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\bin\Debug\netstandard2.0\Overbooked.Data.deps.json
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\bin\Debug\netstandard2.0\Overbooked.Data.dll
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\bin\Debug\netstandard2.0\Overbooked.Data.pdb
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.csproj.CoreCompileInputs.cache
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.AssemblyInfoInputs.cache
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.AssemblyInfo.cs
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.dll
+D:\VALERI\GitHub Repository\Overbooked\Overbooked.Data\obj\Debug\netstandard2.0\Overbooked.Data.pdb

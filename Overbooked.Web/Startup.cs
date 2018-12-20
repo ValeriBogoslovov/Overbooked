@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace Overbooked.Web
+﻿namespace Overbooked.Web
 {
-    using System.Linq;
-    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Identity;
-    using Microsoft.AspNetCore.Identity.UI;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.HttpsPolicy;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
-    using Overbooked.Data;
-    using Overbooked.Data.Models;
-    using Microsoft.AspNetCore.Identity.UI.Services;
+    using Infrastructures.Extensions;
+    using AutoMapper;
 
     public class Startup
     {
@@ -38,6 +27,8 @@ namespace Overbooked.Web
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
+            services.AddAutoMapper();
 
             services.AddMvc(options =>
             {
@@ -72,6 +63,8 @@ namespace Overbooked.Web
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseDatabaseMigration();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

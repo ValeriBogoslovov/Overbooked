@@ -10,15 +10,27 @@ namespace Overbooked.Data
     using Microsoft.EntityFrameworkCore;
     using Overbooked.Data.Models;
 
-    public class OverbookedContext : IdentityDbContext<User>
+    public class OverbookedDbContext : IdentityDbContext<User>
     {
-        public OverbookedContext(DbContextOptions<OverbookedContext> options)
+        public OverbookedDbContext(DbContextOptions<OverbookedDbContext> options)
             : base(options)
         {
         }
+        public DbSet<Hotel> Hotels { get; set; }
+        public DbSet<Room> Rooms { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<User>()
+                .HasOne(u => u.Hotel)
+                .WithOne(h => h.User)
+                .HasForeignKey<Hotel>(h => h.UserId);
+
+            builder.Entity<Hotel>()
+                .HasOne(h => h.User)
+                .WithOne(u => u.Hotel)
+                .HasForeignKey<User>(h => h.HotelId);
+
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
