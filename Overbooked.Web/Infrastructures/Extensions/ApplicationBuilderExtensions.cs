@@ -27,11 +27,13 @@
                     {
                         var adminName = "Administrator";
                         var userRole = "UserRole";
+                        var unconfirmedUser = "UnconfirmedUser";
 
                         var roles = new[]
                         {
                             adminName,
-                            userRole
+                            userRole,
+                            unconfirmedUser
                         };
 
                         foreach (var role in roles)
